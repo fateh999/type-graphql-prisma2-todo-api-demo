@@ -7,6 +7,10 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "resolveJsonModule": true,
     "strictPropertyInitialization": false
-  }
+  },
+  "exclude": ["node_modules"]
 }

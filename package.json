@@ -24,7 +24,11 @@
     "type-graphql": "^1.0.0"
   },
   "scripts": {
-    "dev": "nodemon --exec ts-node src/server.ts",
-    "generate": "prisma generate"
+    "build": "tsc",
+    "generate": "prisma generate",
+    "migrate:save": "prisma migrate save --experimental",
+    "migrate:up": "prisma migrate up --experimental",
+    "start": "node dist/server.js",
+    "watch": "nodemon --exec ts-node src/server.ts"
   }
 }
